@@ -52,7 +52,9 @@
             Console.WriteLine("\n---------- Quantidade total de ítens em estoque de todas as categorias ----------\n");
 
             var totalEmEstoque = produtos.Select(p => p.Estoque).Sum();
+            var totalEmEstoque2 = produtos.Sum(p => p.Estoque);
             Console.WriteLine($"Total: {totalEmEstoque} unidades");
+            Console.WriteLine($"Total: {totalEmEstoque2} unidades");
 
             Console.WriteLine("\n---------- Existe algum produto que custa mais de 2000,00? ----------\n");
 
